@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g4U-OF-jwP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g4U-OF-jwP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,6 +52,7 @@
                                             <outlet property="movieArt" destination="WgU-Mv-0Ju" id="9Ii-P3-vtc"/>
                                             <outlet property="movieDescription" destination="48U-lx-hcs" id="N68-mn-kzK"/>
                                             <outlet property="movieTitle" destination="w0V-1m-TZh" id="0Fy-NI-YLt"/>
+                                            <segue destination="6sh-h1-z7B" kind="show" id="EJD-iJ-3mY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,6 +69,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2P-gS-jld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="407.24637681159425" y="-14.673913043478262"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="kYp-ML-yFI">
+            <objects>
+                <viewController id="6sh-h1-z7B" customClass="MovieDetailsViewController" customModule="Flix" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvy-8I-kLh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iQn-4m-2eB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T2W-J2-ArG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QuD-CF-PpC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="-15"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nID-iF-Uds">
