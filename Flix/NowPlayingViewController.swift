@@ -6,7 +6,7 @@
 import UIKit
 import AlamofireImage
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class NowPlayingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	// Outlets
 	@IBOutlet weak var tableView: UITableView!
@@ -14,7 +14,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	// Global
 	var movies = [[String:Any]]()
 
-	// View Ovverides
+	// ViewController Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -33,13 +33,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		tableView.deselectRow(at: indexPath, animated: true)
 	}
 	
-	// Table View
+	// TableView
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return movies.count
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+		let cell = tableView.dequeueReusableCell(withIdentifier: "NowPlayingCell") as! NowPlayingCell
 		
 		let movie = movies[indexPath.row]
 		let title = movie["title"] as! String
@@ -55,7 +55,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		return cell
 	}
 
-	// Functions
+	// Helper Functions
 	func loadApiData() {
 		let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
 		let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)

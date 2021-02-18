@@ -5,7 +5,7 @@
 
 import UIKit
 
-class MovieCell: UITableViewCell {
+class NowPlayingCell: UITableViewCell {
 	
 	// Outlets
 	@IBOutlet weak var movieTitle: UILabel!

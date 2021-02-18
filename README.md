@@ -7,19 +7,22 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### User Stories
 
 #### REQUIRED (10pts)
-- [ ] (5pts) User can tap a cell to see more details about a particular movie.
-- [ ] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+- [x] (5pts) User can tap a cell to see more details about a particular movie.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
-- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
 - [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="Gifs/Flix2.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+One issue I had was implementing the details screen in the collection view. Unlike in the now playing screen, some of the movies returned by the API didn't have a backdrop path. I had to edit the code to present and a default "Image not found" image in its place.
+
+Another issue was I encountered was when adding the tabbar, collectionview, and collectionviewcell. There were a lot of connections to be made through naming, connecting outlets, adding identifiers. I ended up mispelling an outlet connection and spent 15 minutes checking the entire project to find that I missed one letter.
+
 ---
 
 ## Flix Part 1

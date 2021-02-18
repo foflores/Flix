@@ -1,31 +1,45 @@
-//
 //  MovieDetailsViewController.swift
 //  Flix
 //
 //  Created by Favian Flores on 2/13/21.
-//
 
 import UIKit
 
 class MovieDetailsViewController: UIViewController {
 	
+	// Outlets
+	@IBOutlet weak var movieArt: UIImageView!
+	@IBOutlet weak var backdropArt: UIImageView!
+	@IBOutlet weak var movieTitle: UILabel!
+	@IBOutlet weak var movieDescription: UILabel!
+	
+	//Global
 	var movie: [String:Any]!
 
+	// ViewController Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-		print (movie["title"]!)
-        // Do any additional setup after loading the view.
-    }
+		movieTitle.text = movie["title"] as? String
+		movieDescription.text = movie["overview"] as? String
+		movieTitle.sizeToFit()
+		movieDescription.sizeToFit()
+		
+		let posterBaseUrl = "https://image.tmdb.org/t/p/w300"
+		let posterPath = movie["poster_path"] as! String
+		let posterUrl = URL(string: posterBaseUrl + posterPath)
+		
+		let backdropBaseUrl = "https://image.tmdb.org/t/p/w780"
+		let backdropPath = movie["backdrop_path"] as? String
+		var backdropUrl: URL!
+		if backdropPath != nil {
+			backdropUrl = URL(string: backdropBaseUrl + backdropPath!)
+		}
+		else {
+			backdropUrl = URL(string: "https://www.thermaxglobal.com/wp-content/uploads/2020/05/image-not-found.jpg")
+		}
+		
+		movieArt.af.setImage(withURL: posterUrl!)
+		backdropArt.af.setImage(withURL: backdropUrl!)
+	}
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
