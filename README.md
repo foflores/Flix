@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://github.com/foflores10/Flix">
-		<img src="media/flix.png" alt="Logo" width="80" height="80">
+		<img src="media/icon.png">
 	</a>
 	<h3>Flix</h3>
 </div>
@@ -25,7 +25,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough
 
-<img src="media/flix2.gif" width=250><br>
+<img src="media/flix2.gif"><br>
 
 ### Notes
 
@@ -40,17 +40,20 @@ Another issue was I encountered was when adding the tabbar, collectionview, and 
 ### User Stories
 
 #### REQUIRED (10pts)
+
 - [x] (2pts) User sees an app icon on the home screen and a styled launch screen.
 - [x] (5pts) User can view and scroll through a list of movies now playing in theaters.
 - [x] (3pts) User can view the movie poster image for each movie.
 
 #### BONUS
+
 - [ ] (2pt) User can view the app on various device sizes and orientations.
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthrough
 
-<img src="media/flix.gif" width=250><br>
+<img src="media/flix.gif"><br>
 
 ### Notes
+
 A challenge I faced while building the app was understanding what the table view was actually doing. I was able to follow along with the video, but it was diffcult for me to understand how the data was inserted into each cell and and then what "reloading" did to update the table.
