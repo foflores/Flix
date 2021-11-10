@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="https://github.com/foflores10/Flix">
-		<img src="media/icon.png">
+		<img src="https://media.foflores.com/projects/flix/icon.png" width=128>
 	</a>
 	<h3>Flix</h3>
 </div>
@@ -25,7 +25,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough
 
-<img src="media/flix2.gif"><br>
+<img src="https://media.foflores.com/projects/flix/flix2.gif" width=250><br>
 
 ### Notes
 
@@ -52,7 +52,7 @@ Another issue was I encountered was when adding the tabbar, collectionview, and 
 
 ### App Walkthrough
 
-<img src="media/flix.gif"><br>
+<img src="https://media.foflores.com/projects/flix/flix.gif" width=250><br>
 
 ### Notes
 
