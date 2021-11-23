@@ -23,10 +23,6 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
 - [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
-### App Walkthrough
-
-<img src="https://media.foflores.com/projects/flix/flix2.gif" width=250><br>
-
 ### Notes
 
 One issue I had was implementing the details screen in the collection view. Unlike in the now playing screen, some of the movies returned by the API didn't have a backdrop path. I had to edit the code to present and a default "Image not found" image in its place.
@@ -50,10 +46,12 @@ Another issue was I encountered was when adding the tabbar, collectionview, and 
 - [ ] (2pt) User can view the app on various device sizes and orientations.
 - [x] (1pt) Run your app on a real device.
 
-### App Walkthrough
-
-<img src="https://media.foflores.com/projects/flix/flix.gif" width=250><br>
-
 ### Notes
 
 A challenge I faced while building the app was understanding what the table view was actually doing. I was able to follow along with the video, but it was diffcult for me to understand how the data was inserted into each cell and and then what "reloading" did to update the table.
+
+---
+
+<div align="center">
+	<a href="https://projects.foflores.com/flix"><h3>App Previews</h3></a>
+</div>
