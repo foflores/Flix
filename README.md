@@ -53,5 +53,5 @@ A challenge I faced while building the app was understanding what the table view
 ---
 
 <div align="center">
-	<a href="https://projects.foflores.com/flix"><h3>App Previews</h3></a>
+	<h3><a href="https://projects.foflores.com/flix">App Previews</a></h3>
 </div>
