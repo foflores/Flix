@@ -2,6 +2,8 @@
 
 iOS app that allows users to browse movies from [TMDB](https://www.themoviedb.org).
 
+Created For: CodePath - iOS Development
+
 ## Part 1
 
 ### User Stories
